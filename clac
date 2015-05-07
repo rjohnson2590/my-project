@@ -1,0 +1,10 @@
+#! /usr/bin/env node
+
+var commander = require('commander');
+
+commander
+	.version('0.0.1')
+	.parse(process.argv);
+
+var input = commander.args;
+console.log(commander.args);
