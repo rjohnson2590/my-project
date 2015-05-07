@@ -1,11 +1,22 @@
 {
   "name": "my-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.8.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjohnson2590/my-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rjohnson2590/my-project/issues"
+  },
+  "homepage": "https://github.com/rjohnson2590/my-project"
 }

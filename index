@@ -1,0 +1,47 @@
+#! /usr/bin/env node
+
+var commander = require('commander');
+
+commander
+	.version('0.0.1')
+	.option('-s, --start', 'Start the game')
+	.option('-c,--cross', 'Cross bridge')
+	.option('--shoreline', 'follow shoreline')
+	.option('--wake', 'Wizard eats you')
+	.option('--pass', 'Let Wizard sleep')
+	.option('--talk',"Tak to madien")
+	.option('--anxiety','Flee from madien')
+	.parse(process.argv);
+
+
+
+
+
+
+if(commander.start){
+	console.log("Hello, welcome to our text-based Adventure. Commands are simple for the option given type in ./index follwed by a -- with which ever option you choose for that task. You come to a rickty bridge,  do you cross the bridge or follow the river's shoreline? Cross: --cross, shoreline: --shoreline");
+}
+
+if(commander.cross){
+	console.log("You walk across the bridge, half way on it the bridge collapses and you fall into the river and are eaten by a river shark. To play again type in --start");
+}
+
+if(commander.shoreline){
+	console.log("As you follow the river's shoreline you happen upon a wizard napping. Do you wake the wizard or pass by and let him slumber? wake: --wake, pass: --pass");
+}
+
+if(commander.wake){
+	console.log("You wake the slumbering wizard. As the wizard awakes he transforms into a dragon and eats you. To play again type in --start");
+}
+
+if(commander.pass){
+	console.log("You walk past the wizard leaving him asleep. You come across a fair madien along the riverbank. Do you talk to the madien or flee beacuse of social anxiety? Talk:--talk, flee:--anxiety")
+}
+
+if(commander.talk){
+	console.log("As you approach the fair madien she stabs you and eats your heart. To play again type in --start")
+}
+
+if(commander.anxiety){
+	console.log("You flee from the madien wetting yourserlf in defense. Later you die of a staph infection from said wetting. But at least you did not have to be embarssed in front of the fair maiden so you are ok with this death. YOU WIN!!!!! To play again type in --start")
+}

@@ -1,0 +1,15 @@
+#! /usr/bin/env node
+
+var commander = require('commander');
+
+commander
+	.option('-s, --start', 'Start the game')
+
+
+
+
+
+
+if(commander.start){
+	console.log("Hello, welcome to our text-based Adventure. Commands are simple for the option given type in ./project follwed by a - with which ever option you choose for that task.")
+}
